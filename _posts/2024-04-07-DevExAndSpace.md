@@ -96,11 +96,11 @@ la experiencia del desarrollador (DevEx) y la productividad, así como oportunid
 
 En el ámbito del desarrollo de software, las herramientas basadas en Inteligencia Artificial (IA) como GitHub Copilot, AWS CodeWhisperer y Codeium están revolucionando la forma en que los desarrolladores escriben y optimizan su código. Estas herramientas utilizan algoritmos de aprendizaje automático para analizar el código existente y proporcionar sugerencias de mejora, generar segmentos de código en tiempo real y facilitar la implementación de pruebas unitarias, refactorización y más. A continuación, exploraremos las características, beneficios y cómo estas herramientas pueden mejorar la productividad y la experiencia del desarrollador.
 
-![AI Tools](../CSDT-2024/multimedia/devex/vs.jpg)
+![AI Tools](multimedia/devex/vs.jpg)
 
 ### GitHub Copilot
 
-![GitHub Copilot](../CSDT-2024/multimedia/devex/copilot.jpg)
+![GitHub Copilot](multimedia/devex/copilot.jpg)
 
 #### Características
 
@@ -109,7 +109,7 @@ En el ámbito del desarrollo de software, las herramientas basadas en Inteligenc
 - **Soporte multilenguaje**: Compatible con una amplia gama de lenguajes de programación.
 - **Integración con IDEs**: Disponible en varios editores de código y IDEs, incluyendo Visual Studio Code.
 
-![GitHub Copilot](../CSDT-2024/multimedia/devex/copilot2.jpg)
+![GitHub Copilot](multimedia/devex/copilot2.jpg)
 
 #### Beneficios
 
@@ -117,11 +117,11 @@ En el ámbito del desarrollo de software, las herramientas basadas en Inteligenc
 - **Mejora de la calidad del código**: Al proporcionar sugerencias basadas en grandes conjuntos de datos de código público, Copilot puede ayudar a evitar errores comunes y promover mejores prácticas de codificación.
 - **Aprendizaje y crecimiento**: Los desarrolladores pueden aprender nuevos patrones de codificación y mejores prácticas a través de las sugerencias proporcionadas por Copilot.
 
-![GitHub Copilot](../CSDT-2024/multimedia/devex/GitHub-Copilot-2.gif)
+![GitHub Copilot](multimedia/devex/GitHub-Copilot-2.gif)
 
 ### Codeium
 
-![Codeium](../CSDT-2024/multimedia/devex/code.jpg)
+![Codeium](multimedia/devex/code.jpg)
 
 #### Características
 
@@ -130,7 +130,7 @@ En el ámbito del desarrollo de software, las herramientas basadas en Inteligenc
 - **Búsqueda en lenguaje natural**: Facilita la búsqueda de fragmentos de código y documentación.
 - **Asistente de programación**: Mejora la productividad, permitiendo a los desarrolladores centrarse en la lógica de codificación.
 
-![Codeium](../CSDT-2024/multimedia/devex/code2.png)
+![Codeium](multimedia/devex/code2.png)
 
 #### Beneficios
 
@@ -138,4 +138,4 @@ En el ámbito del desarrollo de software, las herramientas basadas en Inteligenc
 - **Ahorro de tiempo y esfuerzo**: Reduce el tiempo y esfuerzo necesarios para completar tareas de codificación.
 - **Mejora de la calidad del código**: Ayuda a escribir código limpio y optimizado.
 
-![Codeium](../CSDT-2024/multimedia/devex/giphy.gif)
+![Codeium](multimedia/devex/giphy.gif)
