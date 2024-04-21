@@ -5,6 +5,7 @@
 ### Análisis de Código
 
 1. Ingresamos a la opción de Code > Inspect Code.
+
 ![Análisis de Código](multimedia/analysis/refactor.png)
 
 
