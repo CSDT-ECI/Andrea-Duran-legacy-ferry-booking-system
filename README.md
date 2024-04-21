@@ -1,5 +1,5 @@
 ---
-title: Sistema de Reserva de Ferry
+title: Sistema de Reserva de Ferries
 --- 
 
 ## Índice
