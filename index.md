@@ -2,6 +2,12 @@
 title: Sistema de Reserva de Ferries
 --- 
 
+<<<<<<< HEAD
+=======
+# Bienvenido al repositorio de la materia Calidad de Software
+
+
+>>>>>>> 48cd79e25228215afd26d35a22a6440e1bf5e821
 ## Índice
 
 - [README Original](CSDT-2024/README_Original.md)
