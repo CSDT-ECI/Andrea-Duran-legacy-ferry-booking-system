@@ -20,7 +20,7 @@ repositories {
 dependencies {
     // Dependencias de compilación
     implementation 'org.json:json:20240303'
-    implementation 'commons-io:commons-io:2.9.0'
+    implementation 'commons-io:commons-io:2.16.1'
 
     // Dependencias de prueba
     testImplementation 'junit:junit:4.13.2'
