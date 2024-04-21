@@ -31,9 +31,11 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
+      working-directory: java
 
     - name: Run Unit Tests
       run: ./gradlew test
+      working-directory: java
 
  sonarcloud:
     needs: build
@@ -72,3 +74,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: ./gradlew build sonar --info
+      working-directory: java
