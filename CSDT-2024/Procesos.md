@@ -11,59 +11,80 @@ Primero, crea un archivo `.github/workflows/build.yml` en la raíz del repositor
 name: Java CI with Gradle and SonarCloud
 
 on:
-push:
-branches: [ "main" ]
-pull_request:
-branches: [ "main" ]
+  push:
+    branches:
+      - master
+      - procesos
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
-build:
-runs-on: ubuntu-latest
+  build:
+    name: Build and analyze
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-    - name: Set up JDK 11
-      uses: actions/setup-java@v3
-      with:
-        java-version: '11'
-        distribution: 'adopt'
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'zulu'
 
-    - name: Setup Gradle
-      uses: gradle/gradle-build-action@v2
-      with:
-        gradle-version: 7.4
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: 7.4
 
-    - name: Build with Gradle
-      run: ./gradlew build
+      - name: Build with Gradle
+        run: ./gradlew build
+        working-directory: java
 
-    - name: Run Unit Tests
-      run: ./gradlew test
+      - name: Run Unit Tests
+        run: ./gradlew test
+        working-directory: java
 
-sonarcloud:
-needs: build
-runs-on: ubuntu-latest
+  sonarcloud:
+    needs: build
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Set up JDK 11
-      uses: actions/setup-java@v3
-      with:
-        java-version: '11'
-        distribution: 'adopt'
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'zulu'
 
-    - name: Setup Gradle
-      uses: gradle/gradle-build-action@v2
-      with:
-        gradle-version: 7.4
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: 7.4
 
-    - name: SonarCloud Scan
-      uses: jinguji/sonarcloud-gradle-github-action@v2
-      with:
-        sonar-token: ${{ secrets.SONAR_TOKEN }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Cache SonarCloud packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.sonar/cache
+          key: ${{ runner.os }}-sonar
+          restore-keys: ${{ runner.os }}-sonar
+
+      - name: Cache Gradle packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.gradle/caches
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
+          restore-keys: ${{ runner.os }}-gradle
+
+      - name: Build and analyze
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: ./gradlew build sonar --info
+        working-directory: java
 ```
 
 Este flujo de trabajo se divide en dos trabajos principales:
@@ -79,11 +100,34 @@ Para que este flujo de trabajo funcione correctamente, configuramos las siguient
 - **GITHUB_TOKEN:** El token de acceso para GitHub, que es necesario para que la acción de SonarCloud pueda interactuar con GitHub.
 
 Este sería el resultado del flujo de trabajo en GitHub Actions:
-![GitHub Actions](multimedia/github-actions.png)
+
+![GitHub Actions](multimedia/procesos/github-actions.png)
 
 
 Y este sería el resultado del análisis de código en SonarCloud:
-![SonarCloud](multimedia/sonarcloud.png)
+
+![SonarCloud](multimedia/procesos/sonarcloud.png)
 
 ---
-## Step Adicional
+## Step Adicional: Code Security and Analysis
+
+Para mejorar la seguridad del código y detectar posibles vulnerabilidades, podemos integrar herramientas de análisis estático de código en nuestro flujo de trabajo.
+En este caso, habilitamos las opciones `Dependency graph`, `Dependabot alerts` y `Dependabot version updates` en GitHub para recibir alertas sobre vulnerabilidades en las dependencias del proyecto.
+
+![Code Security](multimedia/procesos/sec.png)
+
+Además, configuramos `dependabot.yml` para que revise las dependencias del proyecto, notifique y actualice las actualizaciones disponibles.
+
+```yaml
+version: 2
+updates:
+- package-ecosystem: "gradle"
+  directory: "/java"
+  schedule:
+  interval: "weekly"
+```
+
+Este es el resultado del análisis de dependencias y actualizaciones en GitHub (Automatiza las actualizaciones de dependencias haciendo PRs):
+![Dependabot](multimedia/procesos/dependabot.png)
+
+Finalmente, integramos las alertas sugeridas al trabajo, haciendo un merge de los Pull Requests generados por Dependabot.
