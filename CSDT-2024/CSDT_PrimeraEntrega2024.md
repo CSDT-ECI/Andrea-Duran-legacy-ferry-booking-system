@@ -6,7 +6,7 @@
 
 1. Ingresamos a la opción de Code > Inspect Code.
 
-![Análisis de Código](multimedia/analysis/refactor.png)
+    ![Análisis de Código](multimedia/analysis/refactor.png)
 
 
 2. Seleccionamos la opción de Whole Project y damos clic en Ok.
