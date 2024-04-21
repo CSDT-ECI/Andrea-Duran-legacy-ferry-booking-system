@@ -128,6 +128,7 @@ updates:
 ```
 
 Este es el resultado del análisis de dependencias y actualizaciones en GitHub (Automatiza las actualizaciones de dependencias haciendo PRs):
+
 ![Dependabot](multimedia/procesos/dependabot.png)
 
 Finalmente, integramos las alertas sugeridas al trabajo, haciendo un merge de los Pull Requests generados por Dependabot.
