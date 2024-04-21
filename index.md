@@ -1,6 +1,8 @@
 ---
-title: Sistema de Reserva de Ferries
+title: Menú Principal
 --- 
+
+# Bienvenido al repositorio de la materia Calidad de Software
 
 ## Índice
 
