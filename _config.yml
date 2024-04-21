@@ -1,0 +1,6 @@
+theme: minima
+
+title: Sistema de Reservas de Ferries - CSDT
+author: Andrea Durán
+description: Proyecto de CSDT. Originalemnte, se trataba de una aplicación legacy que contiene la lógica para hacer reservas de ferries. A lo largo de semestre,
+se ha ido analizando y refactorizando según los temas de calidad de software dados en clase.
