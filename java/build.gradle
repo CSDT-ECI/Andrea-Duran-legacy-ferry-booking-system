@@ -26,7 +26,7 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
 
     // Dependencias de Spring Boot
-    implementation 'org.springframework.boot:spring-boot-starter:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter:3.2.5'
 
     // Dependencia de Lombok para generar getters y setters automáticamente
     compileOnly 'org.projectlombok:lombok:1.18.20'
