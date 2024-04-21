@@ -1,5 +1,5 @@
 ---
-title: "Análisis Estático"
+title: "Primera Entrega: Análisis Estático"
 date: 2024-03-24
 ---
 
@@ -97,7 +97,7 @@ Por falta de permisos dentro de la organización, lo que se hizo fue subir el pr
 versionamiento de las dependencias como se ve en la imagen.
    ![Tipo](multimedia/analysis/snykIssu.png)
 
-3. Verificamos toda la información de la vulnerabilidad, como la descripción, la posible solución y el impacto de la vulnerabilidad (Snyk califica las vulnerabilidades,
+4. Verificamos toda la información de la vulnerabilidad, como la descripción, la posible solución y el impacto de la vulnerabilidad (Snyk califica las vulnerabilidades,
 entre más alto sea el puntaje, es más grave. La razón de la calificación está en los links relacionados).
 
    ![Tipo](multimedia/analysis/detail.png)
