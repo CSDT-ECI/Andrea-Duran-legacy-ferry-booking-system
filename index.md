@@ -1,18 +1,7 @@
----
-title: Sistema de Reserva de Ferries
---- 
+Bienvenido al repositorio de la materia Calidad de Software.
+A continuación, podrás encontrar el trabajo realizado en la materia, organizado por entregas,
+las cuales tratan distintos temas relacionados con la calidad de software 
+y la mejora continua en el desarrollo de software. Esto con el fin de
+aplicar los conocimientos adquiridos en la materia y mejorar la calidad de los proyectos.
 
-<<<<<<< HEAD
-=======
-# Bienvenido al repositorio de la materia Calidad de Software
-
-
->>>>>>> 48cd79e25228215afd26d35a22a6440e1bf5e821
-## Índice
-
-- [README Original](CSDT-2024/README_Original.md)
-- [Code Smells y Propuestas de Refactoring](CSDT-2024/CodeSmellsAndRefactoring.md)
-- [Clean Code y Prácticas XP](CSDT-2024/CleanCodeAndXPPractices.md)
-- [Testing Debt](CSDT-2024/TestingDebt.md)
-- [Static Analysis](CSDT-2024/CSDT_PrimeraEntrega2024.md)
-- [DevEx y SPACE](CSDT-2024/DevExAndSpace.md)
+    

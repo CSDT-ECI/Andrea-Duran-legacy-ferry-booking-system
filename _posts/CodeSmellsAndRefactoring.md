@@ -19,12 +19,12 @@ Antes de verificar clase por clase, modificaremos la estructura de paquetes para
 
 La estructura de paquetes actual es plana y no proporciona una separación clara de responsabilidades.
 
-![Estructura de Paquetes Actual](multimedia/refactoring/paq.png)
+![Estructura de Paquetes Actual](../CSDT-2024/multimedia/refactoring/paq.png)
 
 Se sugiere reorganizar el código en paquetes más pequeños y enfocados, como se muestra a continuación (esto lo hacemos al inicio para identificar cada módulo,
 sin embargo, si en el proceso vemos necesario volver a reorganizar los paquetes, por ejemplo, para señalar las clases controladoras y de servicios, lo haremos después):
 
-![Estructura de Paquetes Sugerida](multimedia/refactoring/paqn.png)
+![Estructura de Paquetes Sugerida](../CSDT-2024/multimedia/refactoring/paqn.png)
 
 ---
 ## Ferry
@@ -35,7 +35,7 @@ sin embargo, si en el proceso vemos necesario volver a reorganizar los paquetes,
 
 1. **Uso de Variables Públicas:** Las variables dentro de la clase `Ferry` son públicas, lo que puede llevar a problemas de seguridad y encapsulación.
 
-![Variables Públicas](multimedia/refactoring/vpublic.png)
+![Variables Públicas](../CSDT-2024/multimedia/refactoring/vpublic.png)
 
 #### Sugerencias de Refactorización
 
@@ -43,7 +43,7 @@ sin embargo, si en el proceso vemos necesario volver a reorganizar los paquetes,
 anotación @Data de Lombok, que nos permite generar automáticamente los métodos getter y setter, además de los métodos equals, hashCode y toString.
 Como este proyecto es de años anteriores, debemos actualizar el archivo build.gradle para que sea funcional y se importen las dependencias necesarias.
 
-![Encapsulación](multimedia/refactoring/vprivate.png)
+![Encapsulación](../CSDT-2024/multimedia/refactoring/vprivate.png)
 
 Una vez que se ha actualizado el archivo build.gradle, se ejecuta el comando `gradle build` para que se descarguen las dependencias y se construya el proyecto.
 
@@ -56,7 +56,7 @@ Una vez que se ha actualizado el archivo build.gradle, se ejecuta el comando `gr
 
 1. **Manejo de Excepciones para Control de Flujo:** El constructor de la clase `Ferries` utiliza excepciones para controlar el flujo de la aplicación. Esta no es una práctica recomendada.
 
-![Manejo de Excepciones](multimedia/refactoring/exc.png)
+![Manejo de Excepciones](../CSDT-2024/multimedia/refactoring/exc.png)
 
 2. **Múltiples Responsabilidades en el Constructor:** El constructor de `Ferries` es responsable de leer un archivo, parsear JSON y crear objetos `Ferry`. 
 Esto viola el Principio de Responsabilidad Única de SOLID.
@@ -67,7 +67,7 @@ Esto viola el Principio de Responsabilidad Única de SOLID.
 
 2. **Violación de Single Responsibility:** Dividir el constructor en métodos más pequeños, cada uno con una responsabilidad clara.
 
-![Extraer Método](multimedia/refactoring/excC.png)
+![Extraer Método](../CSDT-2024/multimedia/refactoring/excC.png)
 
 3. **Inyección de dependencias:** Para manejar la lectura del archivo, haciendo la clase más flexible y fácil de probar.
 
