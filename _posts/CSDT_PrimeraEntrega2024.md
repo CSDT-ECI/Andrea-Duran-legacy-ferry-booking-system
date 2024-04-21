@@ -1,3 +1,8 @@
+---
+title: "Análisis Estático"
+date: 2024-03-24
+---
+
 # Análisis Estático del Proyecto Sistema de Reserva de Ferry
 
 ## Uso del Análisis dado por IntelliJ
