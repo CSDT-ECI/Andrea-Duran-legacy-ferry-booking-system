@@ -1,4 +1,6 @@
-# Sistema de Reserva de Ferry
+---
+title: Sistema de Reserva de Ferry
+--- 
 
 ## Índice
 
