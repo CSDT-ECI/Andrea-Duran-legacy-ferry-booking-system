@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '2.5.4'
+    id 'org.springframework.boot' version '3.2.5'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
 }
@@ -19,16 +19,16 @@ repositories {
 
 dependencies {
     // Dependencias de compilación
-    implementation 'org.json:json:20231013'
-    implementation 'commons-io:commons-io:2.9.0'
+    implementation 'org.json:json:20240303'
+    implementation 'commons-io:commons-io:2.16.1'
 
     // Dependencias de prueba
     testImplementation 'junit:junit:4.13.2'
 
     // Dependencias de Spring Boot
-    implementation 'org.springframework.boot:spring-boot-starter:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter:3.2.5'
 
     // Dependencia de Lombok para generar getters y setters automáticamente
-    compileOnly 'org.projectlombok:lombok:1.18.20'
-    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
 }
