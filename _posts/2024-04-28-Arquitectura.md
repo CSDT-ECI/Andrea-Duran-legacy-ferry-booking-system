@@ -3,8 +3,6 @@ title: "Deuda Técnica en Arquitectura"
 date: 2024-04-28
 ---
 
-# Deuda Técnica en Arquitectura
-
 Este documento describe algunos de los olores arquitectónicos identificados en el sistema de reserva de ferries heredado. 
 Estos olores pueden indicar áreas del sistema que podrían beneficiarse de una refactorización o reestructuración para mejorar la mantenibilidad, escalabilidad y extensibilidad.
 
