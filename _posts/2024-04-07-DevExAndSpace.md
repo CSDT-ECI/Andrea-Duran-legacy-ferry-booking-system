@@ -96,7 +96,7 @@ la experiencia del desarrollador (DevEx) y la productividad, así como oportunid
 
 En el ámbito del desarrollo de software, las herramientas basadas en Inteligencia Artificial (IA) como GitHub Copilot, AWS CodeWhisperer y Codeium están revolucionando la forma en que los desarrolladores escriben y optimizan su código. Estas herramientas utilizan algoritmos de aprendizaje automático para analizar el código existente y proporcionar sugerencias de mejora, generar segmentos de código en tiempo real y facilitar la implementación de pruebas unitarias, refactorización y más. A continuación, exploraremos las características, beneficios y cómo estas herramientas pueden mejorar la productividad y la experiencia del desarrollador.
 
-![AI Tools](../assets/multimedia/devex/vs.jpg)
+![AI Tools](/assets/multimedia/devex/vs.jpg)
 
 ### GitHub Copilot
 
