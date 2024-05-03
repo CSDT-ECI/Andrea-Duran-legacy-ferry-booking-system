@@ -1,4 +1,7 @@
-
+---
+title: "Primera Entrega: Análisis Estático"
+date: 2024-03-24
+---
 
 # Análisis Estático del Proyecto Sistema de Reserva de Ferry
 
