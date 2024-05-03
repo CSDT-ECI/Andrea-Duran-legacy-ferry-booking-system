@@ -24,7 +24,7 @@ La estructura de paquetes actual es plana y no proporciona una separación clara
 Se sugiere reorganizar el código en paquetes más pequeños y enfocados, como se muestra a continuación (esto lo hacemos al inicio para identificar cada módulo,
 sin embargo, si en el proceso vemos necesario volver a reorganizar los paquetes, por ejemplo, para señalar las clases controladoras y de servicios, lo haremos después):
 
-![Estructura de Paquetes Sugerida](../assets/multimedia/refactoring/paqn.png)
+![Estructura de Paquetes Sugerida](/assets/multimedia/refactoring/paqn.png)
 
 ---
 ## Ferry
