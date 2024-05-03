@@ -8,4 +8,4 @@
 - [Testing Debt](_posts/2024-03-19-TestingDebt.md)
 - [Static Analysis](CSDT-2024/CSDT_PrimeraEntrega2024.md)
 - [DevEx y SPACE](_posts/2024-04-07-DevExAndSpace.md)
-- [Deuda Técnica en Procesos](CSDT-2024/Procesos.md)
+- [Deuda Técnica en Procesos](_posts/Procesos.md)
