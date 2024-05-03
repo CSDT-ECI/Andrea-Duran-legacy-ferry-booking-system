@@ -1,4 +1,5 @@
-theme: minima
+minima:
+  skin: dark
 
 title: Proyecto CSDT:Sistema de Reservas de Ferries
 author: Andrea Durán
