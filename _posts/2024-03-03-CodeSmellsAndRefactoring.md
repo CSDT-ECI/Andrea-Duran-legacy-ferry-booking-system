@@ -19,7 +19,7 @@ Antes de verificar clase por clase, modificaremos la estructura de paquetes para
 
 La estructura de paquetes actual es plana y no proporciona una separación clara de responsabilidades.
 
-![Estructura de Paquetes Actual](../assets/multimedia/refactoring/paq.png)
+![Estructura de Paquetes Actual]({{ site.baseurl }}/assets/multimedia/refactoring/paq.png)
 
 Se sugiere reorganizar el código en paquetes más pequeños y enfocados, como se muestra a continuación (esto lo hacemos al inicio para identificar cada módulo,
 sin embargo, si en el proceso vemos necesario volver a reorganizar los paquetes, por ejemplo, para señalar las clases controladoras y de servicios, lo haremos después):
