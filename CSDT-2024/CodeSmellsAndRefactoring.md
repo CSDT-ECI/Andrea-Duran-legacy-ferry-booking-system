@@ -1,7 +1,3 @@
----
-title: "Code Smells y Refactoring"
-date: 2024-03-03
----
 
 # Sistema de Reserva de Ferry
 

@@ -1,7 +1,4 @@
----
-title: "DevEx y Developer Productivity"
-date: 2024-04-07
----
+
 
 # Proyecto de Ferries: Análisis y Mejoras
 

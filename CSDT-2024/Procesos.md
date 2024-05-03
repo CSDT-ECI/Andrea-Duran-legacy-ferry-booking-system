@@ -1,7 +1,3 @@
----
-title: "Deuda Técnica en Procesos"
-date: 2024-04-14
----
 
 # Deuda Técnica en Procesos
 

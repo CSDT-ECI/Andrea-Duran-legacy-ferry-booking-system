@@ -1,7 +1,4 @@
----
-title: "Clean Code y Prácticas XP"
-date: 2024-03-10
----
+
 
 # Análisis del Sistema de Reserva de Ferry
 

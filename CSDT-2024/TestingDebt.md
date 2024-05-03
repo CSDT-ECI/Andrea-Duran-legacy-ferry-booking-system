@@ -1,7 +1,3 @@
----
-title: "Testing Debt"
-date: 2024-03-19
----
 
 # Prácticas de Testing Debt en el Sistema de Reserva de Ferry
 
