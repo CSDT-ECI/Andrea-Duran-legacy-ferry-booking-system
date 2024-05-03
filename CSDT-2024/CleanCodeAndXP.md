@@ -26,7 +26,7 @@ date: 2024-03-10
 
 
 - **Código Enfocado:** La mayoría de las funciones son grandes y no enfocadas, como se menciona a detalle en el archivo
-  [Code Smells y Propuestas de Refactoring](2024-03-03-CodeSmellsAndRefactoring.md). Un ejemplo de estas grandes funciones que se pueden dividir se muestra a continuación:
+  [Code Smells y Propuestas de Refactoring](CodeSmellsAndRefactoring.md). Un ejemplo de estas grandes funciones que se pueden dividir se muestra a continuación:
 
       public class JourneyBookingService {
     
